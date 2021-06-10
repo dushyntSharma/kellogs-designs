@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/KellogsDesigns/clientlibs"/>
+    <filter root="/apps/KellogsDesigns/components"/>
+    <filter root="/apps/KellogsDesigns/i18n"/>
+    <filter root="/apps/msm/KellogsDesigns_blueprint" mode="merge"/>
+</workspaceFilter>
