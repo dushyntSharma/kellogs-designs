@@ -1,0 +1,101 @@
+<div data-sly-use.model="com.mindtree.test.core.models.BannerCard"></div>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- bootstrap CSS Links -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+
+        <!-- bootstrap JS Links -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <style>
+                .logo-row{
+                    margin-top: 30px;
+                }
+                .prep-time{
+                    font-size: 14px;
+                    margin-left: 5px;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    color: crimson;
+                }
+                .time{
+                    font-size: 16px;
+                }
+.banner-image{
+   position: relative;
+}
+.watch-button{
+     position: absolute;
+     width: 375px;
+     bottom: 0px;
+    right: 60px;
+}
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-5">
+                            <img class="banner-image"
+                                src="${model.fileReference}"
+                                alt="recip_img-3317295_kelloggs-corn-flakes-chana-chaat2">
+                            <button type="button" class="btn btn-danger
+                                watch-button">WATCH
+                                VIDEO</button>
+                        </div>
+                        <div class="col-7">
+                            <h5 class="text-danger">${model.title}</h5>
+                            <div class="row logo-row">
+                                <div class="col-1">
+                                    <img class="icons"
+                                        src="Images/prep-icon.png" alt="">
+                                </div>
+                                <div class="col-3"><p class="prep-time">Prep
+                                        Time: ${model.prepTime}</p></div>
+                                <div class="col-1" style="margin-top: 12px;">
+                                    <img class="icons"
+                                        src="Images/total-icon.png" alt="">
+                                </div>
+                                <div class="col-3"><p class="prep-time">Total
+                                        Time: ${model.totalTime}</p></div>
+                                <div class="col-1" style="margin-top: 12px;">
+                                    <img class="icons"
+                                        src="Images/serving-icon.png" alt="">
+                                </div>
+                                <div class="col-3"><p class="prep-time">Servings:
+                                        ${servings}</p>
+                                </div>
+                            </div>
+
+                            <p style="font-size: 18px;font-weight:
+                                600;margin-top: 20px;">${model.descrption}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

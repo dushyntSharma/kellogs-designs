@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-06-10T18:28:16.452+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/KellogsDesigns/settings/wcm/templates/kellogs-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Kellogs Website"
+        sling:resourceType="KellogsDesigns/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="KellogsDesigns/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="KellogsDesigns/components/container"
+                layout="responsiveGrid">
+                <kellogs_header
+                    jcr:created="{Date}2021-06-10T18:27:35.144+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-10T18:27:35.144+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="KellogsDesigns/components/kellogs-header"/>
+                <kellogs_five_col_men
+                    jcr:created="{Date}2021-06-10T18:27:53.523+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-10T18:27:53.523+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="KellogsDesigns/components/kellogs-five-col-menu"/>
+                <kellogs_footer
+                    jcr:created="{Date}2021-06-10T18:28:16.446+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-10T18:28:16.446+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="KellogsDesigns/components/kellogs-footer"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
